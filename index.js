@@ -1,4 +1,4 @@
-const songInfoCard = require("./utils/songInfoCard.js");
+const { songInfoCard } = require("./utils/songInfoCard.js");
 module.exports = {
   songInfoCard
 }
