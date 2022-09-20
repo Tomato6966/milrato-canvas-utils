@@ -14,11 +14,15 @@ const { songInfoCard } = require("milrato-canvas-utils");
 
 const songCardUtil = new songInfoCard();
 
-songCardUtil.generate({
+const imageBuffer = await songCardUtil.generate({
     thumbnail: "https://i.ytimg.com/vi/YVkUvmDQ3HY/mqdefault.jpg",
     title: "Without me!", 
     author: "Eminem", 
     duration: "03:40",
     source: "sp",
-})
+});
+
+// djs:
+const attachment = new AttachmentBuilder(imageBuffer, "milrato-card.png");
+message.reply({ embeds: [new EmbedBuilder().setDescription("info").setImage("attachment://milrato-card.png")], files: [attachment] });
 ```
