@@ -1,6 +1,14 @@
 # milrato-canvas-utils
 Canvas Util Functions and whole Builders
 
+```
+npm i Tomato6966/milrato-canvas-utils
+```
+
+```
+yarn add Tomato6966/milrato-canvas-utils
+```
+
 ```js
 const { songInfoCard } = require("milrato-canvas-utils");
 
